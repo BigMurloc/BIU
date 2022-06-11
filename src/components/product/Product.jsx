@@ -5,14 +5,13 @@ import './Product.scss';
 
 const Product = ({product}) => {
 
-
     return (
         <Card className={'root'} >
             <CardMedia className={'card-media'} image={product.image} title={product.name}/>
             <CardContent className={'card-content'}>
                 <div className={'product'}>
-                    <Typography variant="h5" gutterBottom>
-                        {product.name}
+                    <Typography className={'product-title'} variant="h5" href={`/product/${product.id}`} gutterBottom>
+                        <a href={`/product/${product.id}`}>{product.name}</a>
                     </Typography>
                     <Typography variant="h5">
                         {product.price}
@@ -20,7 +19,7 @@ const Product = ({product}) => {
                 </div>
                 <Typography variant="body2" color="textSecondary">{product.description}</Typography>
             </CardContent>
-            <CardActions className={'card-actions'} disableSpacing >
+            <CardActions className={'card-actions'}  disableSpacing >
                 <IconButton aria-label="Add to Cart">
                     <AddShoppingCart/>
                 </IconButton>
