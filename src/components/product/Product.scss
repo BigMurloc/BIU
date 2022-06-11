@@ -1,0 +1,24 @@
+.root {
+  max-width: 100%;
+
+  .card-media {
+    height: 0;
+    padding-top: 56.25%;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+
+    .product {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .card-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+}
