@@ -2,9 +2,12 @@ import React from 'react';
 import {Grid} from '@mui/material'
 import Product from "./product/Product";
 
+import harnas from '../assets/harnas.jpg';
+import perla from '../assets/perla.png';
+
 const products = [
-    {id: 1, name: 'Perła', description: 'Perła export a nie import', price:'2.99 zł', image: 'https://sklep.spolemkielce.pl/wp-content/uploads/2020/04/perla_perla-export_piwo-56-procent-butelka-bzw_500ml.png'},
-    {id: 2, name: 'Harnaś', description: 'Harnaś, bo czemu by nie', price: '1.99 zł', image: 'https://sklep.spolemkielce.pl/wp-content/uploads/2020/04/perla_perla-export_piwo-56-procent-butelka-bzw_500ml.png'}
+    {id: 1, name: 'Perła', description: 'Perła export a nie import', price:'2.99 zł', image: perla},
+    {id: 2, name: 'Harnaś', description: 'Harnaś, bo czemu by nie', price: '1.99 zł', image: harnas}
 ];
 
 const Products = () => {
