@@ -14,8 +14,8 @@
       display: flex;
       justify-content: space-between;
 
-      .product-title:link {
-        text-decoration: none;
+      .product-title:hover {
+        color: blue;
       }
     }
   }
